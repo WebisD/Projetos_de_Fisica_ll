@@ -1,5 +1,6 @@
 import compToFreq
 import freqToComp
+import mathFunctions
 
 def menu():
     print("╔════════════════════════════════════════════════════════╗")
@@ -26,8 +27,6 @@ def main():
             compToFreq.pedeComprimento()
         elif opcao == 2:
             freqToComp.pedeFrequencia()
-
-
 
 if __name__ == "__main__":
     main()
