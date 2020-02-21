@@ -20,19 +20,19 @@ def classificarUnidade(tipo):
 def classificarOnda(comp):
     tipo = ""
 
-    if (comp >= 1.0 and comp <= 1.*10**6):
+    if (comp >= 1.*10**-0.5):
         tipo = "Ondas de Rádio"
-    elif (comp >= 1.0*10**-4 and comp <= 1.0):
+    elif (comp > 1.0*10**-0.5 and comp <= 1.0*10**-3):
         tipo = "Micro-Ondas"
-    elif (comp >= 700.0*10**-9 and comp <= 1.0*10**-4):
+    elif (comp > 1.0*10**-3 and comp <= 400*10**-9):
         tipo = "Infravermeho"
-    elif (comp >= 400.0*10**-9 and comp <= 700.0*10**-9):
+    elif (comp > 400.0*10**-9 and comp <= 700.0*10**-9):
         tipo = "Visível"
-    elif (comp >= 1.0*10**-8 and comp <= 400.0*10**-9):
+    elif (comp > 700*10**-9 and comp <= 400.0*10**-7.5):
         tipo = "Ultravioleta"
-    elif (comp >= 1.0*10**-12 and comp <= 1.0*10**-8):
+    elif (comp > 1.0*10**-7.5 and comp <= 1.0*10**-10.5):
         tipo = "Raios X"
-    elif (comp >= 1.0*10**-14 and comp <= 1.0*10**-12):
+    elif (comp > 1.0*10**-10.5 and comp <= 1.0*10**-12):
         tipo = "Raios Gama"
 
     unidade, valor = classificarUnidade(tipo)
@@ -47,6 +47,7 @@ def CalculaFrequencia(freq):
 
     comp *= valor
 
+    round()
     print("--> Comprimento de Onda: " + str(comp) + " " + unidade)
     print("--> Tipo de Onda: " + tipo + "\n")
 
