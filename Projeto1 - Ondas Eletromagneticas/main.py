@@ -1,5 +1,7 @@
 import compToFreq
 import freqToComp
+import EmToBm
+import BmToEm
 import mathFunctions
 
 def menu():
@@ -7,6 +9,8 @@ def menu():
     print("║ Calcular:                                              ║")
     print("║    1 - Frequência a partir do Comprimento de Onda      ║")
     print("║    2 - Comprimento de Onda a partir da Frequência      ║")
+    print("║    3 - Campo Magnético a partir do Campo Elétrico      ║")
+    print("║    4 - Campo Elétrico a partir do Campo Magnético      ║")
     print("║                                                        ║")
     print("║ 0 - Sair                                               ║")
     print("╚════════════════════════════════════════════════════════╝")
@@ -18,7 +22,7 @@ def main():
         menu()
         opcao = int(input("Digite uma opção: "))
 
-        if(opcao not in (1,2,0)):
+        if(opcao not in (1,4,0)):
             continue
 
         if(opcao == 0):
@@ -27,6 +31,10 @@ def main():
             compToFreq.pedeComprimento()
         elif opcao == 2:
             freqToComp.pedeFrequencia()
+        elif opcao == 3:
+            EmToBm.calculaBm()
+        elif opcao == 4:
+            BmToEm.calculaEm()
 
 if __name__ == "__main__":
     main()
