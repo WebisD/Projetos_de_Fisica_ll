@@ -2,6 +2,8 @@ import compToFreq
 import freqToComp
 import EmToBm
 import BmToEm
+import FreqToFreqAngAndK
+import compToFreqAngAndK
 import mathFunctions
 
 def menu():
@@ -11,6 +13,9 @@ def menu():
     print("║    2 - Comprimento de Onda a partir da Frequência      ║")
     print("║    3 - Campo Magnético a partir do Campo Elétrico      ║")
     print("║    4 - Campo Elétrico a partir do Campo Magnético      ║")
+    print("║      - Número de onda e Frequência angular             ║")
+    print("║        5 - A partir da Frequência                      ║")
+    print("║        6 - A partir do Comprimento                     ║")
     print("║                                                        ║")
     print("║ 0 - Sair                                               ║")
     print("╚════════════════════════════════════════════════════════╝")
@@ -35,6 +40,10 @@ def main():
             EmToBm.calculaBm()
         elif opcao == 4:
             BmToEm.calculaEm()
+        elif opcao == 5:
+            FreqToFreqAngAndK.calculaFreqAngAndK()
+        elif opcao == 6:
+            compToFreqAngAndK.calculaFreqAngAndK()
 
 if __name__ == "__main__":
     main()
