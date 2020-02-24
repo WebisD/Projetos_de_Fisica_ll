@@ -19,7 +19,7 @@ def analisaUnidade(unidade):
         valor = 10**9
     else:
         print("ta errado")
-        pedeEm()
+        pedeBm()
     return valor
 
 def calculaEm(valueBm):
