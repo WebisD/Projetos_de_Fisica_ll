@@ -1,4 +1,5 @@
 from scipy.constants import c
+import numpy as np
 
 def classificarUnidade(tipo):
 
@@ -11,7 +12,7 @@ def classificarUnidade(tipo):
     elif tipo == "Micro-Ondas":
         unidade = "mm"
         valor = 10 ** - 3
-    elif tipo in range("Infravermeho", "Raios X", "Raios Gama", "Ultravioleta", "Visível"):
+    elif tipo in("Infravermeho", "Raios X", "Raios Gama", "Ultravioleta", "Visível"):
         unidade = "nm"
         valor = 10 ** -9
 
@@ -47,7 +48,7 @@ def CalculaFrequencia(freq):
 
     comp *= valor
 
-    print("--> Comprimento de Onda: " + str(comp) + " " + unidade)
+    print("--> Comprimento de Onda: " + np.format_float_scientific(np.float32(comp), precision=3) + " " + unidade)
     print("--> Tipo de Onda: " + tipo + "\n")
 
     return
