@@ -53,14 +53,6 @@ def tipoEscolhido(opcaoEntr):
 
     return valor
 
-def freqAngToComp(freqAngularValue):
-    comp = (2*pi*c)/freqAngularValue
-    return comp
-
-def numeroOndaToComp(numOndaValue):
-    comp = (2*pi)/numOndaValue
-    return comp
-
 def menu():
     print("\nEntrar com:")
     print("\t1 - Frequência")

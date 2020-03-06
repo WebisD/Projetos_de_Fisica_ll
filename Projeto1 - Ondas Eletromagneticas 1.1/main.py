@@ -2,6 +2,7 @@ import compToFreq
 import freqToComp
 import campos
 import caracOndas
+import ClassOndaCarac
 
 def menu():
     print()
@@ -13,6 +14,10 @@ def menu():
     print("║    4 - Campo Magnético a partir do Campo Elétrico      ║")
     print("║    5 - Número de Onda                                  ║")
     print("║    6 - Frequência Angular                              ║")
+    print("║                                                        ║")
+    print("║ Classificar Onda Eletromagnética:                      ║")
+    print("║    7 - A partir do Número da Onda                      ║")
+    print("║    8 - A partir do Frequência Angular                  ║")
     print("║ 0 - Sair                                               ║")
     print("╚════════════════════════════════════════════════════════╝")
     return
@@ -23,7 +28,7 @@ def main():
         menu()
         opcao = int(input("Digite uma opção: "))
 
-        if(opcao not in (1,2, 3, 4, 5, 6,0)):
+        if(opcao not in (1,2, 3, 4, 5, 6, 7, 8, 0)):
             continue
 
         if(opcao == 0):
@@ -40,7 +45,10 @@ def main():
             caracOndas.pedeValor(1)
         elif opcao == 6:
             caracOndas.pedeValor(2)
-
+        elif opcao == 7:
+            ClassOndaCarac.pedeValor(1)
+        elif opcao == 8:
+            ClassOndaCarac.pedeValor(2)
 
 
 if __name__ == "__main__":
