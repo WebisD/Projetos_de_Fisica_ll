@@ -17,7 +17,7 @@ def ondaW():
         entry = entrada.get()
         res['text'] = classOnda.freqAngToComp(float(entry))
 
-    label = Label(w, text="Digite o valor de ω em rad/m:", font='Arial 12')
+    label = Label(w, text="Digite o valor de ω em rad/s:", font='Arial 12')
     label.place(relx=0.3, rely=0.2)
     res = Label(w, font='Arial 12')
     res.place(relx=0.05, rely=0.8)
@@ -39,7 +39,7 @@ def ondaK(): #tipo da onda com num da onda
         entry = entrada.get()
         res['text'] = classOnda.numeroOndaToComp(float(entry))
 
-    label = Label(w, text="Digite o valor de k em rad/s:", font='Arial 12')
+    label = Label(w, text="Digite o valor de k em rad/m:", font='Arial 12')
     label.place(relx=0.3, rely=0.2)
     res = Label(w, font='Arial 12')
     res.place(relx=0.05, rely=0.8)
@@ -250,10 +250,10 @@ def main():
         elif txtC == "Cálculo do campo Em":
             cbxE.set('')
             calcEm()
-        elif txtC == "Número de Onda":
+        elif txtC == "Número de onda":
             cbxE.set('')
             opChamaNumeFreq("num")
-        elif txtC == "Frequência Angular":
+        elif txtC == "Frequência angular":
             cbxE.set('')
             opChamaNumeFreq("freq")
         elif txtC == "Tipo de onda com k":
@@ -283,5 +283,4 @@ def main():
     janela.mainloop()
 
 main()
-#opChamaNumeFreq()
 
