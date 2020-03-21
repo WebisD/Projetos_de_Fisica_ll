@@ -1,4 +1,5 @@
 import equacoesPolarizador
+import interface
 
 '''
 Obs: Todas as entrads (e saídas) são em W/m^2
@@ -33,7 +34,7 @@ Obs: Todas as entrads (e saídas) são em W/m^2
         Aí o negocio complica um pouco :P                         
 '''
 def main():
-    print("Fon")
+    interface.inicializa()
 
 if __name__ == "__main__":
     main()
