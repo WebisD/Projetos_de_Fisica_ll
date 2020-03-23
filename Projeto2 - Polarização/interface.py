@@ -10,7 +10,7 @@ def inicializa():
     #cria a combobox
     combobox = Combobox(window)
     combobox['values'] = (1,2,3)
-    combobox.current(1)
+    combobox.current(0)
     combobox.place(x = 50, y = 50)
 
     def show():
@@ -20,7 +20,6 @@ def inicializa():
         elif numeroPolarizadores == 2:
             polarizadores.open2()
         else:
-            print("AA")
             polarizadores.open3()
 
     btn = Button(window, text = "Avançar", command=show)
