@@ -11,4 +11,4 @@ def MagneticoToEletrico(campo):
 
     cEle = campo*c
 
-    return "--> Campo Elétrico Máximo: "+ np.format_float_scientific(np.float32(cEle), precision=3) + " T"
+    return "--> Campo Elétrico Máximo: "+ np.format_float_scientific(np.float32(cEle), precision=3) + " V/m"
