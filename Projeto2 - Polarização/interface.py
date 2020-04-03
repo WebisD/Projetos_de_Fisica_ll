@@ -8,10 +8,10 @@ def inicializa():
     window.geometry('300x200')
 
     #cria a combobox
-    combobox = Combobox(window)
-    combobox['values'] = (1,2,3)
+    combobox = Combobox(window, state="readonly")
+    combobox['values'] = (1, 2, 3)
     combobox.current(0)
-    combobox.place(x = 50, y = 50)
+    combobox.place(x=50, y=50)
 
     def show():
         numeroPolarizadores = int(combobox.get())
