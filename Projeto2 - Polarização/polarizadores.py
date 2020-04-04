@@ -32,7 +32,7 @@ def open1():
         elif intensidade == 1:
             I1 = float(entrada.get())
             I0 = equacoesPolarizador.reverseHalfLaw(I1)
-        result['text'] = " I0 = " + str(I0) + " W/m²\nI1 = " + str(I1) + " W/m²"
+        result['text'] = "I0 = {:5.2f} W/m²".format(I0) + "\nI1 = {:5.2f} W/m²".format(I1)
 
     btn = Button(window, text="Calcular", command=calcula)
     btn.place(x=50, y=150)
@@ -83,7 +83,7 @@ def open2():
             I1 = equacoesPolarizador.reverseMalusLaw(I2, anguloI1)
             I0 = equacoesPolarizador.reverseHalfLaw(I1)
 
-        result['text'] = "I0 = " + str(I0) + " W/m²\nI1 = " + str(I1) + " W/m²\nI2 = " + str(I2) + " W/m²"
+        result['text'] = "I0 = {:5.2f} W/m²".format(I0) + "\nI1 = {:5.2f} W/m²".format(I1) + "\nI2 = {:5.2f} W/m²".format(I2)
 
     btn = Button(window, text="Calcular", command=calcula)
     btn.place(x=50, y=210)
@@ -138,25 +138,24 @@ def open3():
             I0 = intensidadeValue
             I1 = equacoesPolarizador.halfLaw(I0)
             I2 = equacoesPolarizador.malusLaw(I1, angulo1)
-            I3 = equacoesPolarizador.malusLaw(I2, angulo2)
+            I3 = equacoesPolarizador.malusLaw(I2, difAngulo)
         elif polarizador == 1:
             I1 = intensidadeValue
             I0 = equacoesPolarizador.reverseHalfLaw(I1)
             I2 = equacoesPolarizador.malusLaw(I1, angulo1)
-            I3 = equacoesPolarizador.malusLaw(I2, angulo2)
+            I3 = equacoesPolarizador.malusLaw(I2, difAngulo)
         elif polarizador == 2:
             I2 = intensidadeValue
             I1 = equacoesPolarizador.reverseMalusLaw(I2, angulo1)
             I0 = equacoesPolarizador.reverseHalfLaw(I1)
-            I3 = equacoesPolarizador.malusLaw(I2, angulo2)
+            I3 = equacoesPolarizador.malusLaw(I2, difAngulo)
         elif polarizador == 3:
             I3 = intensidadeValue
             I2 = equacoesPolarizador.reverseMalusLaw(I3, difAngulo)
             I1 = equacoesPolarizador.reverseMalusLaw(I2, angulo1)
             I0 = equacoesPolarizador.reverseHalfLaw(I1)
 
-        result['text'] = "I0 = " + str(I0) + " W/m²\nI1 = " + str(I1) + " W/m²\nI2 = " + str(I2) + " W/m²\nI3 = "\
-                         + str(I3) + " W/m²"
+        result['text'] = "I0 = {:5.2f} W/m²".format(I0) + "\nI1 = {:5.2f} W/m²".format(I1) + "\nI2 = {:5.2f} W/m²".format(I2) + "\nI3 = {:5.2f} W/m²".format(I3)
 
     btn = Button(window, text="Calcular", command=calcula)
     btn.place(x=50, y=200)
