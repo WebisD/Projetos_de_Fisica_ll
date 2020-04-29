@@ -1,0 +1,58 @@
+#:import analise analisaEntrada.getInput
+
+WindowManager:
+    MainWindow:
+    EnergyWindow:
+
+<Button>:
+    size_hint: 0.5,0.2
+
+<MainWindow>:
+    name: "main"
+
+    Button:
+        text: "Calcular energias do atomo de Hidrogenio"
+        background_color: 1, 0, 0, 1
+        pos_hint: {"x":0.25, "y":0.6}
+        on_release:
+            app.root.current = "energy"
+            root.manager.transition.direction = "left"
+
+    Button:
+        text: "Comprimento de onda emitido pelo atomo"
+        background_color: 0, 1, 0, 1
+        pos_hint: {"x":0.25, "y":0.2}
+        on_release:
+            app.root.current = "energy"
+            root.manager.transition.direction = "left"
+
+<EnergyWindow>:
+    name: "energy"
+
+    Label:
+        text: "Entre com o valor do numero quantico (n) do atomo de hidrogenio:"
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    TextInput:
+        id: n
+        multiline: False
+        hint_text: "Enter (n)"
+        size_hint: 0.3,0.07
+        pos_hint: {"x":0.35, "y":0.75}
+
+    Button:
+        text: "Confirmar"
+        pos_hint: {"x":0.35, "y":0.6}
+        size_hint: 0.3,0.1
+        on_release:
+            info = analise(n.text)
+            root.show_answer(info[0], info[1])
+
+    Button:
+        text: "Menu Inicial"
+        pos_hint: {"x":0.0, "y":0.0}
+        size_hint: 0.3,0.1
+        on_release:
+            app.root.current = "main"
+            root.manager.transition.direction = "right"
