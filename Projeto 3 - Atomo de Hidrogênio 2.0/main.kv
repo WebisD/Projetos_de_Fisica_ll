@@ -5,6 +5,7 @@ WindowManager:
     MainWindow:
     EnergyWindow:
     WaveLengthWindow:
+    AbsorberPhoton:
 
 <MainWindow>:
     name: "main"
@@ -12,7 +13,7 @@ WindowManager:
     Button:
         text: "Calcular energias do átomo de hidrogênio"
         background_color: 1, 0, 0, 1
-        pos_hint: {"x":0.25, "y":0.6}
+        pos_hint: {"x":0.25, "y":0.7}
         size_hint: 0.5,0.2
         on_release:
             app.root.current = "energy"
@@ -21,17 +22,26 @@ WindowManager:
     Button:
         text: "Comprimento de onda emitido pelo átomo"
         background_color: 0, 1, 0, 1
-        pos_hint: {"x":0.25, "y":0.2}
+        pos_hint: {"x":0.25, "y":0.4}
         size_hint: 0.5,0.2
         on_release:
             app.root.current = "waveLength"
             root.manager.transition.direction = "right"
 
+    Button:
+        text: "Verificar se fóton pode ou não ser absorvido pelo átomo"
+        background_color: 0, 0, 1, 1
+        pos_hint: {"x":0.25, "y":0.1}
+        size_hint: 0.5,0.2
+        on_release:
+            app.root.current = "absorberPhoton"
+            root.manager.transition.direction = "up"
+
 <EnergyWindow>:
     name: "energy"
 
     Label:
-        text: "Entre com o valor do numero quântico (n) do átomo de hidrogênio:"
+        text: "Entre com o valor do número quântico (n) do átomo de hidrogênio:"
         size_hint: 0.6, 0.2
         pos_hint: {"x":0.2, "top":1}
 
@@ -62,7 +72,7 @@ WindowManager:
     name:"waveLength"
 
     Label:
-        text: "Escola uma das série:"
+        text: "Escolha uma das séries:"
         size_hint: 0.6, 0.2
         pos_hint: {"x":0.2, "top":1}
 
@@ -93,3 +103,45 @@ WindowManager:
         on_release:
             app.root.current = "main"
             root.manager.transition.direction = "left"
+
+<AbsorberPhoton>:
+    name: "absorberPhoton"
+
+    Label:
+        text: "Nota: O átomo se encontra no estado fundamental\n\n\n\n\n         Digite o comprimento de onda do fóton:"
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "y":0.79}
+
+    TextInput:
+        id: n
+        multiline: False
+        hint_text: "Enter (n)"
+        size_hint: 0.3,0.07
+        pos_hint: {"x":0.35, "y":0.67}
+
+    Spinner:
+        id: spinner_id
+
+        text: "m"
+
+        values: ["m", "mm", "nm", "pm"]
+
+        size_hint: None, None
+        size: 50, 50
+        pos_hint:{'x':0.7, 'y': 0.66}
+
+    Button:
+        text: "Confirmar"
+        pos_hint: {"x":0.35, "y":0.45}
+        size_hint: 0.3,0.1
+        on_release:
+            info = analiseEnergy(n.text)
+            root.show_answer(info[0], info[1])
+
+    Button:
+        text: "Menu Inicial"
+        pos_hint: {"center_x": 0.5, "y":0.0}
+        size_hint: 0.3,0.1
+        on_release:
+            app.root.current = "main"
+            root.manager.transition.direction = "down"

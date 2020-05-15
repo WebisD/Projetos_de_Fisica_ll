@@ -28,7 +28,7 @@ Energia Total: {} eV
 
 Raio da Órbita: {} nm
         '''
-        return ["Success", Resposta.format(E_Cinetica, E_Potencial, E_Total, R_Orbita)]
+        return ["Resultado", Resposta.format(E_Cinetica, E_Potencial, E_Total, R_Orbita)]
     else:
         return ["Error", "Digite um valor inteiro"]
 
@@ -67,7 +67,7 @@ def getInputComp(ni, nf):
     comp = cPT.calcularComprimentoTransacao(numberNi, numberNf)
     Resposta = "Comprimento de Onda emitido pelo átomo:\n\n                      λ = {0:.4e} m"
 
-    return ["Success", Resposta.format(comp)]
+    return ["Resultado", Resposta.format(comp)]
 
 def getInputSerie(ni, serie):
     if not tryFloat(ni):
@@ -85,6 +85,6 @@ def getInputSerie(ni, serie):
         print("entrou")
         Resposta = '''Comprimento de Onda emitido pelo átomo:\n\n                      λ = {0:.4e} m\n\n
         Cor do fóton emitido: {1}'''
-        return ["Success", Resposta.format(result[0], result[1])]
+        return ["Resultado", Resposta.format(result[0], result[1])]
     else:
         return result

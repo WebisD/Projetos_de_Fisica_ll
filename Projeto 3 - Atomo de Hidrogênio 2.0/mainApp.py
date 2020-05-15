@@ -31,6 +31,8 @@ class WaveLengthWindow(Screen):
             info = analiseComp.getInputComp(ni,nf)
             return self.show_answer(info[0], info[1])
 
+class AbsorberPhoton(Screen):
+    pass
 
 class WindowManager(ScreenManager):
     pass
