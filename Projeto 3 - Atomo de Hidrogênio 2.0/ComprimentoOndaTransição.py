@@ -6,6 +6,6 @@ def calcularComprimentoTransacao(nInitial, nFinal):
     energiaFinal = energiaTotal.calcEnergiaTotal(nFinal)
 
     variacaoEnergia = energiaInicial - energiaFinal
-    comprimento = (constantes.h_eVs * constantes.c) / variacaoEnergia
+    comprimento = (constantes.h_eVs * constantes.c) / variacaoEnergia * 10**9
 
     return comprimento

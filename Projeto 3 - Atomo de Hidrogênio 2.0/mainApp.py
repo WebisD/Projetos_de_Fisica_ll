@@ -8,7 +8,6 @@ from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 import analisaEntrada as analiseComp
 
-
 class MainWindow(Screen):
     pass
 
@@ -32,12 +31,12 @@ class WaveLengthWindow(Screen):
             return self.show_answer(info[0], info[1])
 
 class AbsorberPhoton(Screen):
-    pass
+    def show_answer(self, title, text):
+        Popups.BuildPop(self, title, text)
 
 class WindowManager(ScreenManager):
     pass
 
-#kv = Builder.load_file("main.kv")
 kv = Builder.load_string(open("main.kv", encoding="utf-8").read())
 class Popups(Popup):
     def BuildPop(self, title, text):
@@ -61,14 +60,14 @@ class Popups(Popup):
     def SeriePop(self, title, option):
         self.box = FloatLayout()
 
-        self.labni = (Label(text="Digite o numero quântico N Inicial:", font_size=15,size_hint=(None, None), pos_hint={'x': .4, 'y': .72}))
+        self.labni = (Label(text="Digite o número quântico N Inicial:", font_size=15,size_hint=(None, None), pos_hint={'x': .4, 'y': .72}))
         self.box.add_widget(self.labni)
 
         self.inpni = (TextInput(hint_text="Enter (ni)", multiline=False, pos_hint={"x": 0.35, "y": 0.67}, size_hint=(0.3, 0.07)))
         self.box.add_widget(self.inpni)
 
         if option == 2:
-            self.labnf = (Label(text="Digite o numero quântico N Final:", font_size=15, size_hint=(None, None),pos_hint={'x': .4, 'y': .43}))
+            self.labnf = (Label(text="Digite o número quântico N Final:", font_size=15, size_hint=(None, None),pos_hint={'x': .4, 'y': .43}))
             self.box.add_widget(self.labnf)
 
             self.inpnf = (TextInput(hint_text= "Enter (nf)", multiline=False, pos_hint= {"x":0.35, "y":0.39}, size_hint= (0.3,0.07)))
@@ -90,9 +89,6 @@ class Popups(Popup):
         self.butExit.bind(on_press=self.main_pop.dismiss)
 
         self.main_pop.open()
-
-        def teste():
-            print("a")
 
 
 class MyMainWindow(App):
