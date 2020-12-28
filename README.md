@@ -43,15 +43,51 @@ O programa realiza cálculos de intensidade de luz entre polarizadores. Assim qu
 ![image](images/p2_calc2.png)
 ![image](images/p2_calc3.png)
 
+## Funcionalidade - Projeto 3: Átomo de hidrogênio
+
+O programa realiza cálculos de energia, raio, comprimento de onda, fotons, cor emitida e  número quântico.
+
+![image](images/p3_home.png)
+
+### 1 - Número quântico
+Com o número quântico o usuário pode calcular a energia cinética, potencial, total e o raio de sua órbita  
+
+![image](images/p3_calc1_1.png)
+![image](images/p3_calc1.png)
+
+### 2 - Comprimento de onda
+O usuário deve selecionar qual a série correspondente, bem como o número quântico, para assim calcular o comprimento e o espectro do fóton emitido
+
+![image](images/p3_calc2.png)
+![image](images/p3_calc2_1.png)
+![image](images/p3_calc2_2.png)
+
+### 3 - Verificar o fóton
+Deve-se inserir o comprimento de onda e sua unidade, para saber se o fóton ira ionizar o átomo de hidrogênio ou não
+
+![image](images/p3_calc3.png)
+![image](images/p3_calc3_1.png)
+
 ## Execução
 
 Tanto no Windows quanto no Linux a execução é feita a partir da execução da linha a seguir no terminal, ou utilizando uma IDE de sua preferência. 
 
 Inicialmente deve-se instalar as bibliotecas necessárias:
 
+No primeiro projeto:
+
 ```bash
 python -m pip install -U pip
 python -m pip install -U scipy
+```
+
+No terceiro projeto
+
+```bash
+python -m pip install --upgrade pip wheel setuptools virtualenv
+python -m pip install docutils pygments pypiwin32 kivy_deps.sdl2==0.1.* kivy_deps.glew==0.1.*
+python -m pip install kivy_deps.gstreamer==0.1.*
+python -m pip install kivy[base] kivy_examples --pre --extra-index-url https://kivy.org/downloads/simple/
 ```
 
 ```bash
