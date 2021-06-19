@@ -1,103 +1,112 @@
-# Projeto Fisíca Óptica
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/antuniooh/optical-physics-simulator">
 
-Projeto semestral da matéria de Física Óptica, ministrada no Centro Universitário FEI. Consiste em alguns programas desenvolvidos em python com o intuito de realizar alguns cálculos
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/antuniooh/optical-physics-simulator">
+  
+  <a href="https://github.com/antuniooh/optical-physics-simulator/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/antuniooh/optical-physics-simulator">
+  </a>
+  
+   <img alt="GitHub" src="https://img.shields.io/github/license/antuniooh/optical-physics-simulator">
+</p>
 
-## Funcionalidade - Projeto 1: Ondulatória
 
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/antuniooh/optical-physics-simulator">
+    <img src="https://github.com/antuniooh/optical-physics-calculator/blob/master/code/Projeto%201%20-%20Ondulat%C3%B3ria/fundo.jpg" alt="Logo" width="550">
+  </a>
+</p>
+
+<p align="center">
+  <img alt="Math" src="https://img.shields.io/badge/Math-red?style=for-the-badge&logo=math&logoColor=white"/>
+  <img alt="Python" src="https://img.shields.io/badge/Python-darkblue?style=for-the-badge&logo=python&logoColor=white"/>
+    <img alt="Physics" src="https://img.shields.io/badge/Physics-darkrgreen?style=for-the-badge&logo=physics&logoColor=white"/>
+</p>
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#-about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#-how-to-run">How To Run</a>
+    </li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+## 💻 About The Project
+
+# Project 1 - Undulatory
 O programa realiza cálculos de conversões de ondas eletromagnéticas, campos magnéticos e elétricos
 
-![image](images/p1_home.png)
+![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app.gif)
 
-**1 - Ondas eletromagnéticas** - É possível realizar dois tipos de conversão: "Conversão de λ para f" e "Conversão de f para λ".
+1 - Ondas eletromagnéticas - É possível realizar dois tipos de conversão: "Conversão de λ para f" e "Conversão de f para λ".
 
-É exibido ao usuário no primeiro tipo de conversão a frequência e o tipo de onda eletromagnética. Já no segundo é exibido além do tipo o comprimento da onda.
+É exibido ao usuário no primeiro tipo de conversão a frequência e o tipo de onda eletromagnética. Já no segundo é exibido além do tipo o comprimento da onda
 
-![image](images/p1_conversao1_oe.png)
-![image](images/p1_conversao2_oe.png)
+2 - Campos Elétrico e Magnético - É possível realizar seis tipos de cálculo: "Cálculo do campo Bm", "Cálculo do campo Em", "Número de onda", "Frequência angular", "Tipo de onda com k" e "Tipo de onda com ω".
 
-**2 - Campos Elétrico e Magnético** - É possível realizar seis tipos de cálculo: "Cálculo do campo Bm", "Cálculo do campo Em", "Número de onda", "Frequência angular", "Tipo de onda com k" e "Tipo de onda com ω".
-
-![image](images/p1_calc1_cm.png)
-![image](images/p1_calc2_cm.png)
-
-No cálculo de número de onda e frequência angular é possível utilizar tanto a frequência como o comprimento de onda para se calcula-la. 
-
-![image](images/p1_calc3_cm.png)
-![image](images/p1_calc4_cm.png)
+No cálculo de número de onda e frequência angular é possível utilizar tanto a frequência como o comprimento de onda para se calcula-la.
 
 É possível descobrir o tipo de onda utilizando não só o k como também o ω
 
-![image](images/p1_calc5_cm.png)
-![image](images/p1_calc6_cm.png)
-
-
-## Funcionalidade - Projeto 2: Polarizadores
-
+# Project 2 - Polarizers
 O programa realiza cálculos de intensidade de luz entre polarizadores. Assim que inicia é possível selecionar o número de polarizadores.
 
-![image](images/p2_home.png)
+Cálculo - De acordo com o número de polarizadores deve-se também inserir o valor do ângulo.
 
-**Cálculo** - De acordo com o número de polarizadores deve-se também inserir o valor do ângulo.
+![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app.gif)
 
-![image](images/p2_calc1.png)
-![image](images/p2_calc2.png)
-![image](images/p2_calc3.png)
+# Project 3 - Hydrogen Atom
+O programa realiza cálculos de energia, raio, comprimento de onda, fotons, cor emitida e número quântico.
 
-## Funcionalidade - Projeto 3: Átomo de hidrogênio
+1 - Número quântico: Com o número quântico o usuário pode calcular a energia cinética, potencial, total e o raio de sua órbita
 
-O programa realiza cálculos de energia, raio, comprimento de onda, fotons, cor emitida e  número quântico.
+2 - Comprimento de onda: O usuário deve selecionar qual a série correspondente, bem como o número quântico, para assim calcular o comprimento e o espectro do fóton emitido
 
-![image](images/p3_home.png)
+3 - Verificar o fóton: Deve-se inserir o comprimento de onda e sua unidade, para saber se o fóton ira ionizar o átomo de hidrogênio ou não
 
-### 1 - Número quântico
-Com o número quântico o usuário pode calcular a energia cinética, potencial, total e o raio de sua órbita  
+![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app.gif)
 
-![image](images/p3_calc1_1.png)
-![image](images/p3_calc1.png)
-
-### 2 - Comprimento de onda
-O usuário deve selecionar qual a série correspondente, bem como o número quântico, para assim calcular o comprimento e o espectro do fóton emitido
-
-![image](images/p3_calc2.png)
-![image](images/p3_calc2_1.png)
-![image](images/p3_calc2_2.png)
-
-### 3 - Verificar o fóton
-Deve-se inserir o comprimento de onda e sua unidade, para saber se o fóton ira ionizar o átomo de hidrogênio ou não
-
-![image](images/p3_calc3.png)
-![image](images/p3_calc3_1.png)
-
-## Execução
-
-Tanto no Windows quanto no Linux a execução é feita a partir da execução da linha a seguir no terminal, ou utilizando uma IDE de sua preferência. 
-
-Inicialmente deve-se instalar as bibliotecas necessárias:
-
-No primeiro projeto:
+<!-- HOW TO RUN -->
+## 🚀 How To Run
 
 ```bash
-python -m pip install -U pip
-python -m pip install -U scipy
+
+# Clone the repository
+$ git clone https://github.com/antuniooh/optical-physics-simulator.git
+
+# Access the project folder in your terminal / cmd
+$ cd optical-physics-simulator/src
+
+# Install the libs
+$ python -m pip install -U pip
+$ python -m pip install -U scipy
+$ python -m pip install --upgrade pip wheel setuptools virtualenv
+$ python -m pip install docutils pygments pypiwin32 kivy_deps.sdl2==0.1.* kivy_deps.glew==0.1.*
+$ python -m pip install kivy_deps.gstreamer==0.1.*
+$ python -m pip install kivy[base] kivy_examples --pre --extra-index-url https://kivy.org/downloads/simple/
+
+# Go to one project
+$ cd <project_folder>
+
+# In both Windows and Linux, the execution is done by executing the following line in the terminal, or using an IDE of your choice.
+$ python3 main.py
+
 ```
 
-No terceiro projeto
+<!-- AUTHORS -->
+## 🤖 Authors
 
-```bash
-python -m pip install --upgrade pip wheel setuptools virtualenv
-python -m pip install docutils pygments pypiwin32 kivy_deps.sdl2==0.1.* kivy_deps.glew==0.1.*
-python -m pip install kivy_deps.gstreamer==0.1.*
-python -m pip install kivy[base] kivy_examples --pre --extra-index-url https://kivy.org/downloads/simple/
-```
-
-```bash
-python main.py
-```
-
-Entretanto, utilizando apenas a linha acima é possivel que o compilador de sua máquina utilize o python em sua versão 2.7. Para resolver isso é mais vantajoso utilizar:
-
-```bash
-python3 main.py
-```
-
-Caso você esteja utilizando o Windows é possível executar o projeto apenas executando o arquivo "clickme.exe.bat"
+[Antonio Gustavo](https://github.com/antuniooh)           |  [Tainá Bueno](https://github.com/tainacbueno)           |  [Weverson da Silva](https://github.com/WebisD)
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://avatars.githubusercontent.com/u/51217271?v=4" alt="drawing" width="150"/>  |  <img src="https://avatars.githubusercontent.com/u/56885213?v=4" alt="drawing" width="150"/>| <img src="https://avatars.githubusercontent.com/u/49571908?v=4" alt="drawing" width="150"/>
+22.119.001-0 | 22.119.006-9 | 22.119.004-4
