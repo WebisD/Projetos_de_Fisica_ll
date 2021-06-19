@@ -1,21 +1,21 @@
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/antuniooh/optical-physics-simulator">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/antuniooh/optical-physics-calculator">
 
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/antuniooh/optical-physics-simulator">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/antuniooh/optical-physics-calculator">
   
-  <a href="https://github.com/antuniooh/optical-physics-simulator/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/antuniooh/optical-physics-simulator">
+  <a href="https://github.com/antuniooh/optical-physics-calculator/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/antuniooh/optical-physics-calculator">
   </a>
   
-   <img alt="GitHub" src="https://img.shields.io/github/license/antuniooh/optical-physics-simulator">
+   <img alt="GitHub" src="https://img.shields.io/github/license/antuniooh/optical-physics-calculator">
 </p>
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/antuniooh/optical-physics-simulator">
-    <img src="https://github.com/antuniooh/optical-physics-calculator/blob/master/code/Projeto%201%20-%20Ondulat%C3%B3ria/fundo.jpg" alt="Logo" width="550">
+  <a href="https://github.com/antuniooh/optical-physics-calculator">
+    <img src="https://github.com/antuniooh/optical-physics-calculator/blob/master/src/Undulatory/fundo.jpg" alt="Logo" width="550">
   </a>
 </p>
 
@@ -46,7 +46,7 @@
 # Project 1 - Undulatory
 The program performs electromagnetic wave, magnetic and electric field conversion calculations
 
-![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app1.gif)
+![app](https://github.com/antuniooh/optical-physics-calculator/blob/master/images/app1.gif)
 
 1 - Electromagnetic waves - It is possible to carry out two types of conversion: "Conversion from λ to f" and "Conversion from f to λ".
 
@@ -63,12 +63,12 @@ The program performs light intensity calculations between polarizers. Once it st
 
 Calculation - According to the number of polarizers, the angle value must also be entered.
 
-![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app2.gif)
+![app](https://github.com/antuniooh/optical-physics-calculator/blob/master/images/app2.gif)
 
 # Project 3 - Hydrogen Atom
 The program performs energy, radius, wavelength, photon, emitted color and quantum number calculations.
 
-![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app3.gif)
+![app](https://github.com/antuniooh/optical-physics-calculator/blob/master/images/app3.gif)
 
 1 - Quantum number: With the quantum number the user can calculate the kinetic, potential, total energy and the radius of its orbit
 
@@ -82,10 +82,10 @@ The program performs energy, radius, wavelength, photon, emitted color and quant
 ```bash
 
 # Clone the repository
-$ git clone https://github.com/antuniooh/optical-physics-simulator.git
+$ git clone https://github.com/antuniooh/optical-physics-calculator.git
 
 # Access the project folder in your terminal / cmd
-$ cd optical-physics-simulator/src
+$ cd optical-physics-calculator/src
 
 # Install the libs
 $ python -m pip install -U pip
