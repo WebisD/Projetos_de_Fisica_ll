@@ -44,37 +44,37 @@
 ## 💻 About The Project
 
 # Project 1 - Undulatory
-O programa realiza cálculos de conversões de ondas eletromagnéticas, campos magnéticos e elétricos
+The program performs electromagnetic wave, magnetic and electric field conversion calculations
 
-![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app.gif)
+![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app1.gif)
 
-1 - Ondas eletromagnéticas - É possível realizar dois tipos de conversão: "Conversão de λ para f" e "Conversão de f para λ".
+1 - Electromagnetic waves - It is possible to carry out two types of conversion: "Conversion from λ to f" and "Conversion from f to λ".
 
-É exibido ao usuário no primeiro tipo de conversão a frequência e o tipo de onda eletromagnética. Já no segundo é exibido além do tipo o comprimento da onda
+The user is shown in the first type of conversion the frequency and type of electromagnetic wave. In the second, in addition to the type, the wavelength is displayed
 
-2 - Campos Elétrico e Magnético - É possível realizar seis tipos de cálculo: "Cálculo do campo Bm", "Cálculo do campo Em", "Número de onda", "Frequência angular", "Tipo de onda com k" e "Tipo de onda com ω".
+2 - Electric and Magnetic Fields - It is possible to perform six types of calculation: "Bm field calculation", "Em field calculation", "Wave number", "Angular frequency", "Wave type with k" and "Type waveform with ω".
 
-No cálculo de número de onda e frequência angular é possível utilizar tanto a frequência como o comprimento de onda para se calcula-la.
+In the calculation of wavenumber and angular frequency it is possible to use both the frequency and the wavelength to calculate it.
 
-É possível descobrir o tipo de onda utilizando não só o k como também o ω
+It is possible to find the wave type using not only the k but also the ω
 
 # Project 2 - Polarizers
-O programa realiza cálculos de intensidade de luz entre polarizadores. Assim que inicia é possível selecionar o número de polarizadores.
+The program performs light intensity calculations between polarizers. Once it starts it is possible to select the number of polarizers.
 
-Cálculo - De acordo com o número de polarizadores deve-se também inserir o valor do ângulo.
+Calculation - According to the number of polarizers, the angle value must also be entered.
 
-![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app.gif)
+![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app2.gif)
 
 # Project 3 - Hydrogen Atom
-O programa realiza cálculos de energia, raio, comprimento de onda, fotons, cor emitida e número quântico.
+The program performs energy, radius, wavelength, photon, emitted color and quantum number calculations.
 
-1 - Número quântico: Com o número quântico o usuário pode calcular a energia cinética, potencial, total e o raio de sua órbita
+![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app3.gif)
 
-2 - Comprimento de onda: O usuário deve selecionar qual a série correspondente, bem como o número quântico, para assim calcular o comprimento e o espectro do fóton emitido
+1 - Quantum number: With the quantum number the user can calculate the kinetic, potential, total energy and the radius of its orbit
 
-3 - Verificar o fóton: Deve-se inserir o comprimento de onda e sua unidade, para saber se o fóton ira ionizar o átomo de hidrogênio ou não
+2 - Wavelength: The user must select the corresponding series, as well as the quantum number, in order to calculate the length and spectrum of the emitted photon.
 
-![app](https://github.com/antuniooh/optical-physics-simulator/blob/master/images/app.gif)
+3 - Check the photon: You must enter the wavelength and its unit, to know if the photon will ionize the hydrogen atom or not
 
 <!-- HOW TO RUN -->
 ## 🚀 How To Run
